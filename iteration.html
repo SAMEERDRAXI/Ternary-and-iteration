@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>
+		JavaScript Array.forEach() function
+	</title>
+</head>
+
+<body style = "text-align:center;">
+
+	<h1 style = "color:green;" >
+		iteration
+	</h1>
+
+	<h2>Array.forEach() method</h2>
+	
+	<p>
+		array.forEach() method Calls a function
+		once for every array element.
+	</p>
+	
+	<p id="GFG"></p>
+	
+	<script>
+		var emptytxt = "";
+		var No = [23, 212, 9, 628, 22314];
+		No.forEach(itrtFunction);
+		
+		document.getElementById("GFG").innerHTML = emptytxt;
+		
+		function itrtFunction(value, index, array) {
+			emptytxt = emptytxt + value + "<br>";
+		}
+	</script>
+</body>
+
+</html>				
